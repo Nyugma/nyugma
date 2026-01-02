@@ -1,0 +1,91 @@
+{
+  "terms": [
+    "plaintiff", "defendant", "court", "judge", "jury", "trial", "evidence", "testimony", "witness", "attorney",
+    "lawyer", "counsel", "legal", "law", "statute", "regulation", "ordinance", "code", "rule", "procedure",
+    "motion", "petition", "complaint", "answer", "discovery", "deposition", "interrogatory", "subpoena", "summons", "service",
+    "jurisdiction", "venue", "standing", "capacity", "party", "intervenor", "amicus", "brief", "memorandum", "pleading",
+    "contract", "agreement", "breach", "damages", "remedy", "relief", "injunction", "restraining", "order", "judgment",
+    "verdict", "decision", "ruling", "opinion", "precedent", "stare", "decisis", "appeal", "appellate", "review",
+    "certiorari", "writ", "habeas", "corpus", "mandamus", "prohibition", "quo", "warranto", "error", "reversal",
+    "affirmance", "remand", "dismissal", "summary", "default", "consent", "settlement", "mediation", "arbitration",
+    "dispute", "resolution", "negotiation", "compromise", "release", "waiver", "estoppel", "laches", "limitations",
+    "property", "real", "personal", "intellectual", "patent", "trademark", "copyright", "trade", "secret", "license",
+    "easement", "servitude", "covenant", "deed", "title", "ownership", "possession", "tenant", "landlord", "lease",
+    "mortgage", "lien", "security", "interest", "collateral", "foreclosure", "bankruptcy", "insolvency", "creditor", "debtor",
+    "asset", "liability", "equity", "shareholder", "corporation", "partnership", "limited", "company", "trust",
+    "fiduciary", "duty", "care", "loyalty", "business", "commercial", "transaction", "sale", "purchase", "goods",
+    "services", "warranty", "guarantee", "merchantability", "fitness", "purpose", "consumer", "protection", "fraud", "misrepresentation",
+    "negligence", "malpractice", "tort", "intentional", "strict", "causation", "proximate", "cause", "foreseeability",
+    "standard", "reasonable", "person", "contributory", "comparative", "assumption", "risk", "immunity", "privilege",
+    "defamation", "libel", "slander", "privacy", "invasion", "emotional", "distress", "assault", "battery", "false",
+    "imprisonment", "trespass", "nuisance", "conversion", "interference", "prospective", "economic", "advantage", "unfair", "competition",
+    "criminal", "felony", "misdemeanor", "infraction", "prosecution", "defense", "guilt", "innocence", "burden", "proof",
+    "beyond", "doubt", "preponderance", "clear", "convincing", "admissible", "inadmissible", "hearsay", "exception",
+    "confidential", "client", "doctor", "patient", "spousal", "clergy", "penitent", "journalist",
+    "source", "self", "incrimination", "miranda", "rights", "search", "seizure", "warrant", "probable",
+    "suspicion", "stop", "frisk", "arrest", "detention", "custody", "interrogation", "confession", "exclusionary",
+    "fruit", "poisonous", "tree", "good", "faith", "inevitable", "independent",
+    "family", "marriage", "divorce", "separation", "annulment", "visitation", "support", "alimony", "maintenance",
+    "child", "adoption", "guardianship", "conservatorship", "domestic", "violence", "paternity", "legitimacy",
+    "inheritance", "will", "testament", "probate", "estate", "executor", "administrator", "beneficiary", "heir", "devise",
+    "bequest", "legacy", "intestate", "succession", "trustee", "settlor", "grantor", "remainder",
+    "reversion", "life", "fee", "simple", "absolute", "conditional", "determinable", "possibility", "reverter"
+  ],
+  "categories": {
+    "civil_procedure": [
+      "plaintiff", "defendant", "court", "judge", "jury", "trial", "motion", "petition", "complaint", "answer",
+      "discovery", "deposition", "interrogatory", "subpoena", "summons", "service", "jurisdiction", "venue", "standing",
+      "capacity", "party", "intervenor", "amicus", "brief", "memorandum", "pleading", "judgment", "verdict", "decision", "ruling", "appeal",
+      "opinion", "precedent", "stare", "decisis", "appellate", "review", "certiorari", "writ", "habeas", "corpus",
+      "mandamus", "prohibition", "quo", "warranto", "error", "reversal", "affirmance", "remand", "dismissal", "summary", "default"
+    ],
+    "contracts": [
+      "contract", "agreement", "breach", "damages", "remedy", "relief", "settlement", "mediation", "arbitration",
+      "negotiation", "compromise", "release", "waiver", "warranty", "guarantee", "merchantability", "fitness",
+      "purpose", "consent", "dispute", "resolution"
+    ],
+    "property_law": [
+      "property", "real", "personal", "intellectual", "patent", "trademark", "copyright", "trade", "secret", "license",
+      "deed", "title", "ownership", "possession", "tenant", "landlord", "lease", "easement", "servitude", "covenant",
+      "mortgage", "lien", "security", "interest", "collateral", "foreclosure", "fee", "simple", "life", "remainder", "reversion",
+      "absolute", "conditional", "determinable", "possibility", "reverter"
+    ],
+    "torts": [
+      "negligence", "malpractice", "tort", "intentional", "strict", "liability", "causation", "proximate", "cause",
+      "foreseeability", "standard", "reasonable", "person", "contributory", "comparative", "assumption",
+      "risk", "immunity", "privilege", "defamation", "libel", "slander", "privacy", "invasion", "emotional", "distress", 
+      "assault", "battery", "false", "imprisonment", "trespass", "nuisance", "conversion", "interference", 
+      "prospective", "economic", "advantage", "unfair", "competition"
+    ],
+    "criminal_law": [
+      "criminal", "felony", "misdemeanor", "infraction", "prosecution", "defense", "guilt", "innocence", "burden", "proof",
+      "beyond", "doubt", "miranda", "rights", "search", "seizure", "warrant", "probable", "suspicion", "stop", "frisk",
+      "arrest", "detention", "custody", "interrogation", "confession", "exclusionary", "fruit", "poisonous", "tree", 
+      "good", "faith", "inevitable", "independent", "source", "self", "incrimination"
+    ],
+    "family_law": [
+      "family", "marriage", "divorce", "separation", "annulment", "custody", "visitation", "support", "alimony",
+      "maintenance", "child", "adoption", "guardianship", "conservatorship", "domestic", "violence",
+      "paternity", "legitimacy"
+    ],
+    "business_law": [
+      "corporation", "partnership", "limited", "company", "shareholder", "fiduciary", "duty", "care", "loyalty",
+      "business", "commercial", "transaction", "sale", "purchase", "goods", "services", "consumer", "protection",
+      "fraud", "misrepresentation", "bankruptcy", "insolvency", "creditor", "debtor", "asset", "liability", "equity"
+    ],
+    "evidence": [
+      "evidence", "testimony", "witness", "admissible", "inadmissible", "hearsay", "exception", "privilege",
+      "confidential", "attorney", "client", "doctor", "patient", "spousal", "clergy", "penitent", "journalist",
+      "preponderance", "clear", "convincing"
+    ],
+    "estates_trusts": [
+      "inheritance", "will", "testament", "probate", "estate", "executor", "administrator", "beneficiary",
+      "heir", "devise", "bequest", "legacy", "intestate", "succession", "trust", "trustee", "settlor",
+      "grantor"
+    ],
+    "legal_system": [
+      "lawyer", "counsel", "attorney", "legal", "law", "statute", "regulation", "ordinance", "code", "rule", "procedure",
+      "injunction", "restraining", "order", "estoppel", "laches", "limitations", "review"
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "cases": [
+    {
+      "case_id": "case_001",
+      "title": "Smith v. Johnson Family Custody Dispute",
+      "date": "2024-09-28T17:49:22.701616",
+      "file_path": "data/cases/case_001.pdf",
+      "metadata": {
+        "category": "family_law",
+        "word_count": 129,
+        "generated": true
+      },
+      "vector_index": 0
+    },
+    {
+      "case_id": "case_002",
+      "title": "Anderson Property Boundary Dispute",
+      "date": "2022-11-27T17:49:22.766907",
+      "file_path": "data/cases/case_002.pdf",
+      "metadata": {
+        "category": "property_law",
+        "word_count": 126,
+        "generated": true
+      },
+      "vector_index": 1
+    },
+    {
+      "case_id": "case_003",
+      "title": "Martinez Employment Discrimination Case",
+      "date": "2022-08-26T17:49:22.896554",
+      "file_path": "data/cases/case_003.pdf",
+      "metadata": {
+        "category": "employment_law",
+        "word_count": 127,
+        "generated": true
+      },
+      "vector_index": 2
+    },
+    {
+      "case_id": "case_004",
+      "title": "Thompson Contract Breach - Construction Dispute",
+      "date": "2025-05-15T17:49:22.982243",
+      "file_path": "data/cases/case_004.pdf",
+      "metadata": {
+        "category": "contract_law",
+        "word_count": 139,
+        "generated": true
+      },
+      "vector_index": 3
+    },
+    {
+      "case_id": "case_005",
+      "title": "Wilson Estate Probate Proceedings",
+      "date": "2023-09-09T17:49:23.072169",
+      "file_path": "data/cases/case_005.pdf",
+      "metadata": {
+        "category": "probate_law",
+        "word_count": 111,
+        "generated": true
+      },
+      "vector_index": 4
+    },
+    {
+      "case_id": "case_006",
+      "title": "Green Environmental Compliance Violation",
+      "date": "2023-02-28T17:49:23.114572",
+      "file_path": "data/cases/case_006.pdf",
+      "metadata": {
+        "category": "environmental_law",
+        "word_count": 130,
+        "generated": true
+      },
+      "vector_index": 5
+    },
+    {
+      "case_id": "case_007",
+      "title": "Davis Personal Injury - Automobile Accident",
+      "date": "2022-02-24T17:49:23.166160",
+      "file_path": "data/cases/case_007.pdf",
+      "metadata": {
+        "category": "tort_law",
+        "word_count": 120,
+        "generated": true
+      },
+      "vector_index": 6
+    },
+    {
+      "case_id": "case_008",
+      "title": "Roberts Intellectual Property - Patent Infringement",
+      "date": "2021-08-06T17:49:23.205914",
+      "file_path": "data/cases/case_008.pdf",
+      "metadata": {
+        "category": "intellectual_property",
+        "word_count": 125,
+        "generated": true
+      },
+      "vector_index": 7
+    },
+    {
+      "case_id": "case_009",
+      "title": "Miller Criminal Appeal - Drug Possession",
+      "date": "2025-07-20T17:49:23.259569",
+      "file_path": "data/cases/case_009.pdf",
+      "metadata": {
+        "category": "criminal_law",
+        "word_count": 126,
+        "generated": true
+      },
+      "vector_index": 8
+    },
+    {
+      "case_id": "case_010",
+      "title": "Chen Immigration Asylum Application",
+      "date": "2024-08-10T17:49:23.312299",
+      "file_path": "data/cases/case_010.pdf",
+      "metadata": {
+        "category": "immigration_law",
+        "word_count": 122,
+        "generated": true
+      },
+      "vector_index": 9
+    },
+    {
+      "case_id": "case_011",
+      "title": "Baker Corporate Merger Antitrust Review",
+      "date": "2023-03-21T17:49:23.365681",
+      "file_path": "data/cases/case_011.pdf",
+      "metadata": {
+        "category": "antitrust_law",
+        "word_count": 145,
+        "generated": true
+      },
+      "vector_index": 10
+    },
+    {
+      "case_id": "case_012",
+      "title": "Foster Medical Malpractice Claim",
+      "date": "2025-03-07T17:49:23.415787",
+      "file_path": "data/cases/case_012.pdf",
+      "metadata": {
+        "category": "medical_malpractice",
+        "word_count": 136,
+        "generated": true
+      },
+      "vector_index": 11
+    },
+    {
+      "case_id": "case_013",
+      "title": "Nelson Bankruptcy Chapter 11 Reorganization",
+      "date": "2024-06-29T17:49:23.465330",
+      "file_path": "data/cases/case_013.pdf",
+      "metadata": {
+        "category": "bankruptcy_law",
+        "word_count": 123,
+        "generated": true
+      },
+      "vector_index": 12
+    },
+    {
+      "case_id": "case_014",
+      "title": "Parker Securities Fraud Class Action",
+      "date": "2021-02-14T17:49:23.513396",
+      "file_path": "data/cases/case_014.pdf",
+      "metadata": {
+        "category": "securities_law",
+        "word_count": 124,
+        "generated": true
+      },
+      "vector_index": 13
+    },
+    {
+      "case_id": "case_015",
+      "title": "Hughes Tax Court Appeal - Business Deductions",
+      "date": "2024-09-04T17:49:23.749140",
+      "file_path": "data/cases/case_015.pdf",
+      "metadata": {
+        "category": "tax_law",
+        "word_count": 124,
+        "generated": true
+      },
+      "vector_index": 14
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "created_at": "2024-01-01T00:00:00Z",
+    "last_updated": "2026-01-01T17:49:24.658122",
+    "total_cases": 15,
+    "schema_version": "1.0"
+  }
+}

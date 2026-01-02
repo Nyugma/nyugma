@@ -1,0 +1,96 @@
+# Systemd service file for Legal Case Similarity Web Application
+# 
+# Installation:
+# 1. Copy this file to /etc/systemd/system/legal-case-similarity.service
+# 2. Update paths and user/group as needed
+# 3. Reload systemd: sudo systemctl daemon-reload
+# 4. Enable service: sudo systemctl enable legal-case-similarity
+# 5. Start service: sudo systemctl start legal-case-similarity
+#
+# Usage:
+#   sudo systemctl start legal-case-similarity    # Start the service
+#   sudo systemctl stop legal-case-similarity     # Stop the service
+#   sudo systemctl restart legal-case-similarity  # Restart the service
+#   sudo systemctl status legal-case-similarity   # Check service status
+#   sudo journalctl -u legal-case-similarity -f   # View logs
+
+[Unit]
+Description=Legal Case Similarity Web Application
+Documentation=https://github.com/yourusername/legal-case-similarity
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+
+# User and Group
+# Change these to match your deployment user
+User=www-data
+Group=www-data
+
+# Working Directory
+# Update this path to your installation directory
+WorkingDirectory=/opt/legal-case-similarity
+
+# Environment
+# Path to virtual environment
+Environment="PATH=/opt/legal-case-similarity/venv/bin:/usr/local/bin:/usr/bin:/bin"
+
+# Application Configuration
+Environment="HOST=0.0.0.0"
+Environment="PORT=8000"
+Environment="RELOAD=false"
+Environment="LOG_LEVEL=warning"
+Environment="WORKERS=4"
+Environment="ACCESS_LOG=false"
+
+# Python Path
+Environment="PYTHONPATH=/opt/legal-case-similarity/src"
+
+# Execution
+# Use production configuration
+ExecStart=/opt/legal-case-similarity/venv/bin/python /opt/legal-case-similarity/uvicorn_production.py
+
+# Alternative: Use run_api.py
+# ExecStart=/opt/legal-case-similarity/venv/bin/python /opt/legal-case-similarity/run_api.py
+
+# Alternative: Direct uvicorn command
+# ExecStart=/opt/legal-case-similarity/venv/bin/uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --workers 4
+
+# Restart Policy
+Restart=always
+RestartSec=10
+StartLimitInterval=200
+StartLimitBurst=5
+
+# Resource Limits
+# Adjust based on your system resources
+LimitNOFILE=65536
+LimitNPROC=4096
+
+# Memory Limit (optional)
+# MemoryLimit=2G
+
+# CPU Limit (optional)
+# CPUQuota=200%
+
+# Security Settings
+# Uncomment these for enhanced security
+# NoNewPrivileges=true
+# PrivateTmp=true
+# ProtectSystem=strict
+# ProtectHome=true
+# ReadWritePaths=/opt/legal-case-similarity/data /opt/legal-case-similarity/logs
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=legal-case-similarity
+
+# Kill Settings
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target
