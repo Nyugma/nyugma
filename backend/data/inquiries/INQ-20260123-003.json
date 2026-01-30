@@ -1,0 +1,21 @@
+{
+  "inquiry_id": "INQ-20260123-003",
+  "case_id": null,
+  "case_type": "criminal",
+  "full_name": "Mehta",
+  "phone_number": "+91 99999 99999",
+  "email": null,
+  "city": "MMMMsd",
+  "state": "Mizoram",
+  "case_description": "okay okay okay test",
+  "requirements": "Nothing just testinhg",
+  "expectations": "Free free free",
+  "urgency": "high",
+  "preferred_date": null,
+  "previous_lawyer": "no",
+  "budget_range": "flexible",
+  "additional_notes": null,
+  "submitted_at": "2026-01-23T10:01:10.964Z",
+  "status": "pending",
+  "created_at": "2026-01-23T15:31:11.291926"
+}

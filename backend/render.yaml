@@ -1,0 +1,137 @@
+# Render Deployment Configuration for Legal Case Similarity API
+#
+# This file configures how Render deploys the backend API service.
+# 
+# Documentation: https://render.com/docs/yaml-spec
+#
+# To deploy:
+# 1. Push this file to your repository
+# 2. Connect your repository to Render
+# 3. Render will automatically detect this file and create the service
+# 4. Update the environment variables in the Render dashboard with your actual values
+#
+# Important: Update CORS_ORIGINS and FRONTEND_URL with your actual frontend domain
+
+services:
+  # Web Service Configuration
+  - type: web
+    # Service name (will appear in Render dashboard)
+    name: legal-case-similarity-api
+    
+    # Runtime environment
+    env: python
+    
+    # Build command - runs once during deployment
+    # This installs Python dependencies and downloads required NLTK data
+    buildCommand: "pip install -r requirements.txt && python -c 'import nltk; nltk.download(\"stopwords\"); nltk.download(\"punkt\"); nltk.download(\"wordnet\")'"
+    
+    # Start command - runs to start the application
+    # Uses the production Uvicorn configuration script
+    startCommand: "python uvicorn_production.py"
+    
+    # Environment variables
+    # These can also be set/overridden in the Render dashboard
+    envVars:
+      # Server Configuration
+      # Bind to all interfaces (required for Render)
+      - key: HOST
+        value: 0.0.0.0
+      
+      # Port number (Render will override this with its own PORT)
+      # Render automatically sets PORT, but we include it for clarity
+      - key: PORT
+        value: 8000
+      
+      # Logging Configuration
+      # Use "warning" for production to reduce log volume
+      # Options: debug, info, warning, error, critical
+      - key: LOG_LEVEL
+        value: warning
+      
+      # CORS Configuration
+      # IMPORTANT: Replace with your actual frontend domain(s)
+      # For multiple domains, use comma-separated list:
+      # value: https://frontend1.netlify.app,https://frontend2.vercel.app
+      # For development/testing, you can temporarily use "*" to allow all origins
+      - key: CORS_ORIGINS
+        value: https://your-frontend.netlify.app
+      
+      # Frontend URL Configuration
+      # IMPORTANT: Replace with your actual frontend domain
+      # This is used in the API root endpoint response
+      # Should match one of the origins in CORS_ORIGINS
+      - key: FRONTEND_URL
+        value: https://your-frontend.netlify.app
+      
+      # Python Version
+      # Specify the Python version to use
+      # Render supports Python 3.7 - 3.12
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      
+      # Worker Configuration (optional)
+      # Number of worker processes for handling requests
+      # If not set, uvicorn_production.py will auto-calculate based on CPU cores
+      # Recommended: (2 × CPU cores) + 1
+      # - key: WORKERS
+      #   value: 4
+      
+      # Access Logging (optional)
+      # Set to "true" to enable detailed access logs
+      # Recommended: false for production (better performance)
+      # - key: ACCESS_LOG
+      #   value: false
+      
+      # Application Settings (optional)
+      # Maximum file upload size in bytes (default: 10MB)
+      # - key: MAX_FILE_SIZE
+      #   value: 10485760
+      
+      # Number of similar cases to return in search results
+      # - key: DEFAULT_RESULTS_COUNT
+      #   value: 10
+      
+      # Performance Monitoring (optional)
+      # Enable performance tracking and metrics collection
+      # - key: ENABLE_PERFORMANCE_MONITORING
+      #   value: true
+
+# Additional Configuration Options (commented out by default)
+#
+# Health Check Configuration:
+# Render automatically performs health checks on the root path (/)
+# You can customize this if needed:
+#
+# healthCheckPath: /api/health
+#
+# Auto-Deploy Configuration:
+# Render can automatically deploy when you push to a specific branch
+#
+# branch: main
+#
+# Disk Storage:
+# If you need persistent storage for uploaded files or data
+#
+# disk:
+#   name: legal-cases-data
+#   mountPath: /opt/render/project/src/data
+#   sizeGB: 10
+#
+# Note: For production, consider using external storage (S3, etc.) instead
+#
+# Scaling Configuration:
+# Render allows you to scale your service
+# This is configured in the Render dashboard, not in this file
+#
+# Region:
+# You can specify the deployment region in the Render dashboard
+# Available regions: Oregon (US West), Ohio (US East), Frankfurt (EU), Singapore (Asia)
+#
+# Custom Domains:
+# You can add custom domains in the Render dashboard
+# Example: api.yourdomain.com
+#
+# Environment Groups:
+# For managing environment variables across multiple services,
+# you can use Environment Groups in the Render dashboard
+

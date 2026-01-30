@@ -1,0 +1,21 @@
+{
+  "inquiry_id": "INQ-20260123-005",
+  "case_id": "case_003",
+  "case_type": "intellectual",
+  "full_name": "Mehta",
+  "phone_number": "+91 83060 80595",
+  "email": "abc@gmail.com",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "case_description": "I want a free visit.",
+  "requirements": "I want a free visit.",
+  "expectations": "I want a free visit.",
+  "urgency": "high",
+  "preferred_date": null,
+  "previous_lawyer": "no",
+  "budget_range": "25k-50k",
+  "additional_notes": null,
+  "submitted_at": "2026-01-23T15:48:27.203454",
+  "status": "pending",
+  "created_at": "2026-01-23T15:48:27.203454"
+}

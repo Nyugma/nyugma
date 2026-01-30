@@ -1,0 +1,22 @@
+{
+  "inquiry_id": "INQ-20260123-001",
+  "case_id": "case_010",
+  "case_type": "consumer",
+  "full_name": "Utsav Mehta",
+  "phone_number": "+91 8306 08059",
+  "email": "abc@xyz.com",
+  "city": "Rajkot",
+  "state": "Gujarat",
+  "case_description": "I was very sad and I did this",
+  "requirements": "I want Help with the lawyer",
+  "expectations": "I want to win the case or get a bail",
+  "urgency": "urgent",
+  "preferred_date": "2026-01-30",
+  "previous_lawyer": "no",
+  "budget_range": "2l-5l",
+  "additional_notes": "I am okay with 10%+/-",
+  "submitted_at": "2026-01-23T09:44:57.886Z",
+  "status": "reviewed",
+  "created_at": "2026-01-23T15:14:58.221544",
+  "updated_at": "2026-01-23T15:29:17.978174"
+}
