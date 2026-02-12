@@ -25,6 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
+    // Hide Search link for helpers
+    const user = getCurrentUser();
+    if (user && user.user_type === 'helper') {
+        const searchLinks = document.querySelectorAll('a.nav-link[href="search.html"]');
+        searchLinks.forEach(link => {
+            link.style.display = 'none';
+        });
+    }
+    
     // Handle navigation highlighting for current page
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-link').forEach(link => {

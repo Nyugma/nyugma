@@ -11,3 +11,7 @@ pytest==7.4.3
 hypothesis==6.92.1
 psutil==5.9.6
 reportlab==4.0.7
+sqlalchemy==2.0.23
+passlib[bcrypt]==1.7.4
+pyjwt==2.8.0
+email-validator==2.1.0
