@@ -1,0 +1,22 @@
+{
+  "inquiry_id": "INQ-20260207-001",
+  "case_id": "case_001",
+  "case_type": "criminal",
+  "full_name": "Nilesh Nikam",
+  "phone_number": "+91 90390 31115",
+  "email": "nileshnikam2223@gmail.com",
+  "city": "ahmednagar",
+  "state": "Maharashtra",
+  "case_description": "case is related to criminal offence",
+  "requirements": "consultation",
+  "expectations": "result is on my side",
+  "urgency": "medium",
+  "preferred_date": "2026-02-12",
+  "previous_lawyer": "no",
+  "budget_range": "50k-1l",
+  "additional_notes": null,
+  "submitted_at": "2026-02-07T11:04:08.517943",
+  "status": "contacted",
+  "created_at": "2026-02-07T11:04:08.517943",
+  "updated_at": "2026-02-07T11:28:28.242590"
+}
